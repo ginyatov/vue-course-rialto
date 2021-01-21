@@ -36,7 +36,7 @@
 <script>
 import { useRoute } from "vue-router";
 import { useStore } from "vuex";
-import AppStatus from "@/components/AppStatus";
+import AppStatus from "@components/AppStatus";
 import { computed } from "vue";
 import TaskActions from "@components/task/TaskActions";
 
