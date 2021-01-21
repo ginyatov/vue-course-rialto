@@ -22,7 +22,7 @@ export default createStore({
 
         if (data) {
           const correctData = Object.values(data);
-          commit("setTasks", correctData);
+          commit("setTasks", correctData.reverse());
         }
 
         dispatch("checkStatusTask");
