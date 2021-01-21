@@ -281,7 +281,6 @@ img {
 
 .card__actions {
   position: relative;
-  z-index: 99;
 }
 
 .confirm__buttons .btn:last-child {
