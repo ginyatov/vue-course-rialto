@@ -1,12 +1,12 @@
-let handleOutsideClick;
+let handleOutsideClick: any;
 
 export default {
-  mounted(el, binding) {
-    handleOutsideClick = (e) => {
+  mounted(el: any, binding: any) {
+    handleOutsideClick = (e: any) => {
       e.stopPropagation();
       const { handler, exclude } = binding.value;
       let clickedOnExcludedEl = false;
-      exclude.forEach((excludedEl) => {
+      exclude.forEach((excludedEl: any) => {
         if (!clickedOnExcludedEl) {
           clickedOnExcludedEl = excludedEl.contains(e.target);
         }

@@ -29,11 +29,11 @@
   </form>
 </template>
 
-<script>
-import { computed, reactive, ref } from "vue";
+<script lang="ts">
+import { computed, defineComponent, reactive, ref } from "vue";
 import { useStore } from "vuex";
 import { useRouter } from "vue-router";
-export default {
+export default defineComponent({
   setup() {
     const formValues = reactive({
       title: "",
@@ -66,5 +66,5 @@ export default {
       createTask,
     };
   },
-};
+});
 </script>

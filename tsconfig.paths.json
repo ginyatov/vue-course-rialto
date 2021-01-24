@@ -1,0 +1,22 @@
+{
+   "paths": {
+      "@css/*": [
+        "./src/assets/css/*"
+      ],
+      "@pages/*": [
+        "src/pages/*"
+      ],
+      "@img/*": [
+        "./src/assets/img/*"
+      ],
+      "@ui/*": [
+        "./src/components/ui/*"
+      ],
+      "@utils/*": [
+        "./src/utils/*"
+      ],
+      "@components/*": [
+        "./src/components/*"
+      ]
+    }
+}

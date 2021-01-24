@@ -11,9 +11,9 @@ export default createStore({
   },
   getters: {
     isEmptyTasks: (state) => state.tasks.length === 0,
-    availableTypes: (state) => state.tasks.map((task) => task.type),
+    availableTypes: (state) => state.tasks.map((task: any) => task.type),
     activeTasks: (state) =>
-      state.tasks.filter((task) => task.type === "active").length,
+      state.tasks.filter((task: any) => task.type === "active").length,
   },
   actions: {
     initConnectionToFireBase: ({ state, commit, dispatch }) => {
@@ -55,7 +55,7 @@ export default createStore({
     },
 
     checkStatusTask: ({ state }) => {
-      state.tasks.filter((task) => {
+      state.tasks.filter((task: any) => {
         if (!isCorrectDate(task.date)) {
           task.type = "overdue";
         }
